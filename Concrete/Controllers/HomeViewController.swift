@@ -9,5 +9,38 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    var repositories:[Repository] = []
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        SearchAPI.searchRepositoriesGet(q: "language:Java", sort: "stars", page: 1) { (response, error) in
+            if let items = response?.items {
+                self.repositories = items
+                self.tableView.reloadData()
+            }
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if  let vc = segue.destination as? PullRequestsViewController,
+            let indexPath = tableView.indexPathForSelectedRow {
+            vc.currentRepository = repositories[indexPath.row]
+        }
+    }
+}
 
+extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return repositories.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
+        
+        cell.textLabel?.text = repositories[indexPath.row].name
+        
+        return cell
+    }
 }

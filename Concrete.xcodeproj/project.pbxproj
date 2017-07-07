@@ -14,6 +14,17 @@
 		0332EA001F0ED8D300DFCB6C /* ConcreteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332E9FF1F0ED8D300DFCB6C /* ConcreteTests.swift */; };
 		034F7F2C1F0FE95B00AC7F08 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034F7F2B1F0FE95B00AC7F08 /* HomeViewController.swift */; };
 		034F7F2E1F0FE97400AC7F08 /* PullRequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034F7F2D1F0FE97400AC7F08 /* PullRequestsViewController.swift */; };
+		034F7F531F0FEEEF00AC7F08 /* AlamofireImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034F7F461F0FEEEF00AC7F08 /* AlamofireImplementations.swift */; };
+		034F7F541F0FEEEF00AC7F08 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034F7F471F0FEEEF00AC7F08 /* APIHelper.swift */; };
+		034F7F551F0FEEEF00AC7F08 /* PullRequestsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034F7F491F0FEEEF00AC7F08 /* PullRequestsAPI.swift */; };
+		034F7F561F0FEEEF00AC7F08 /* SearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034F7F4A1F0FEEEF00AC7F08 /* SearchAPI.swift */; };
+		034F7F571F0FEEEF00AC7F08 /* APIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034F7F4B1F0FEEEF00AC7F08 /* APIs.swift */; };
+		034F7F581F0FEEEF00AC7F08 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034F7F4C1F0FEEEF00AC7F08 /* Extensions.swift */; };
+		034F7F591F0FEEEF00AC7F08 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034F7F4E1F0FEEEF00AC7F08 /* Profile.swift */; };
+		034F7F5A1F0FEEEF00AC7F08 /* PullRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034F7F4F1F0FEEEF00AC7F08 /* PullRequest.swift */; };
+		034F7F5B1F0FEEEF00AC7F08 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034F7F501F0FEEEF00AC7F08 /* Repository.swift */; };
+		034F7F5C1F0FEEEF00AC7F08 /* ResultResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034F7F511F0FEEEF00AC7F08 /* ResultResponse.swift */; };
+		034F7F5D1F0FEEEF00AC7F08 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034F7F521F0FEEEF00AC7F08 /* Models.swift */; };
 		841883BDA514C49A4C8FFAF3 /* Pods_ConcreteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 196D9EF2DF632CB204831F18 /* Pods_ConcreteTests.framework */; };
 		90736A493D4E941480B6A8F4 /* Pods_Concrete.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B529EA1296495723A62B917F /* Pods_Concrete.framework */; };
 /* End PBXBuildFile section */
@@ -39,7 +50,18 @@
 		0332E9FF1F0ED8D300DFCB6C /* ConcreteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcreteTests.swift; sourceTree = "<group>"; };
 		0332EA011F0ED8D300DFCB6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		034F7F2B1F0FE95B00AC7F08 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Controllers/HomeViewController.swift; sourceTree = "<group>"; };
-		034F7F2D1F0FE97400AC7F08 /* PullRequestsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullRequestsViewController.swift; sourceTree = "<group>"; };
+		034F7F2D1F0FE97400AC7F08 /* PullRequestsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PullRequestsViewController.swift; path = Controllers/PullRequestsViewController.swift; sourceTree = "<group>"; };
+		034F7F461F0FEEEF00AC7F08 /* AlamofireImplementations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlamofireImplementations.swift; path = Providers/AlamofireImplementations.swift; sourceTree = "<group>"; };
+		034F7F471F0FEEEF00AC7F08 /* APIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIHelper.swift; path = Providers/APIHelper.swift; sourceTree = "<group>"; };
+		034F7F491F0FEEEF00AC7F08 /* PullRequestsAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullRequestsAPI.swift; sourceTree = "<group>"; };
+		034F7F4A1F0FEEEF00AC7F08 /* SearchAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchAPI.swift; sourceTree = "<group>"; };
+		034F7F4B1F0FEEEF00AC7F08 /* APIs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIs.swift; path = Providers/APIs.swift; sourceTree = "<group>"; };
+		034F7F4C1F0FEEEF00AC7F08 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Providers/Extensions.swift; sourceTree = "<group>"; };
+		034F7F4E1F0FEEEF00AC7F08 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		034F7F4F1F0FEEEF00AC7F08 /* PullRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullRequest.swift; sourceTree = "<group>"; };
+		034F7F501F0FEEEF00AC7F08 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		034F7F511F0FEEEF00AC7F08 /* ResultResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultResponse.swift; sourceTree = "<group>"; };
+		034F7F521F0FEEEF00AC7F08 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Models.swift; path = Providers/Models.swift; sourceTree = "<group>"; };
 		196D9EF2DF632CB204831F18 /* Pods_ConcreteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConcreteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76A8406A45A1E364D4F581F2 /* Pods-Concrete.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Concrete.release.xcconfig"; path = "Pods/Target Support Files/Pods-Concrete/Pods-Concrete.release.xcconfig"; sourceTree = "<group>"; };
 		B529EA1296495723A62B917F /* Pods_Concrete.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Concrete.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,8 +145,37 @@
 		034F7F2F1F0FE9DC00AC7F08 /* Providers */ = {
 			isa = PBXGroup;
 			children = (
+				034F7F481F0FEEEF00AC7F08 /* APIs */,
+				034F7F4D1F0FEEEF00AC7F08 /* Models */,
+				034F7F461F0FEEEF00AC7F08 /* AlamofireImplementations.swift */,
+				034F7F471F0FEEEF00AC7F08 /* APIHelper.swift */,
+				034F7F4B1F0FEEEF00AC7F08 /* APIs.swift */,
+				034F7F4C1F0FEEEF00AC7F08 /* Extensions.swift */,
+				034F7F521F0FEEEF00AC7F08 /* Models.swift */,
 			);
 			name = Providers;
+			sourceTree = "<group>";
+		};
+		034F7F481F0FEEEF00AC7F08 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				034F7F491F0FEEEF00AC7F08 /* PullRequestsAPI.swift */,
+				034F7F4A1F0FEEEF00AC7F08 /* SearchAPI.swift */,
+			);
+			name = APIs;
+			path = Providers/APIs;
+			sourceTree = "<group>";
+		};
+		034F7F4D1F0FEEEF00AC7F08 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				034F7F4E1F0FEEEF00AC7F08 /* Profile.swift */,
+				034F7F4F1F0FEEEF00AC7F08 /* PullRequest.swift */,
+				034F7F501F0FEEEF00AC7F08 /* Repository.swift */,
+				034F7F511F0FEEEF00AC7F08 /* ResultResponse.swift */,
+			);
+			name = Models;
+			path = Providers/Models;
 			sourceTree = "<group>";
 		};
 		676AF0013D4AC9DA0FF64EBC /* Frameworks */ = {
@@ -352,8 +403,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				034F7F2E1F0FE97400AC7F08 /* PullRequestsViewController.swift in Sources */,
+				034F7F591F0FEEEF00AC7F08 /* Profile.swift in Sources */,
+				034F7F581F0FEEEF00AC7F08 /* Extensions.swift in Sources */,
+				034F7F561F0FEEEF00AC7F08 /* SearchAPI.swift in Sources */,
+				034F7F571F0FEEEF00AC7F08 /* APIs.swift in Sources */,
 				0332E9EB1F0ED8D300DFCB6C /* AppDelegate.swift in Sources */,
+				034F7F5A1F0FEEEF00AC7F08 /* PullRequest.swift in Sources */,
+				034F7F5C1F0FEEEF00AC7F08 /* ResultResponse.swift in Sources */,
+				034F7F531F0FEEEF00AC7F08 /* AlamofireImplementations.swift in Sources */,
+				034F7F551F0FEEEF00AC7F08 /* PullRequestsAPI.swift in Sources */,
+				034F7F541F0FEEEF00AC7F08 /* APIHelper.swift in Sources */,
 				034F7F2C1F0FE95B00AC7F08 /* HomeViewController.swift in Sources */,
+				034F7F5B1F0FEEEF00AC7F08 /* Repository.swift in Sources */,
+				034F7F5D1F0FEEEF00AC7F08 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

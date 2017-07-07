@@ -13,7 +13,7 @@
         <scene sceneID="HnQ-P1-Ayl">
             <objects>
                 <navigationController id="yfD-RB-k7O" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" translucent="NO" id="GSD-0j-d0H">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="GSD-0j-d0H">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
@@ -29,7 +29,7 @@
         <!--Github JavaPop-->
         <scene sceneID="lGL-B1-1y1">
             <objects>
-                <viewController title="Github JavaPop" id="wTb-cb-x1W" sceneMemberID="viewController">
+                <viewController title="Github JavaPop" id="wTb-cb-x1W" customClass="HomeViewController" customModule="Concrete" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Rvl-Ly-5bZ"/>
                         <viewControllerLayoutGuide type="bottom" id="g8e-gY-GWJ"/>
@@ -37,7 +37,45 @@
                     <view key="view" contentMode="scaleToFill" id="kSS-sC-cit">
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bO1-Xm-XkZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" textLabel="MaK-YC-V8L" style="IBUITableViewCellStyleDefault" id="fgX-c6-rQd">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fgX-c6-rQd" id="NcU-dJ-OI4">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MaK-YC-V8L">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Uto-Re-pyr" kind="show" id="icN-sw-tJY"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="wTb-cb-x1W" id="6XN-kK-Zps"/>
+                                    <outlet property="delegate" destination="wTb-cb-x1W" id="Dqa-L9-rGx"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bO1-Xm-XkZ" firstAttribute="top" secondItem="Rvl-Ly-5bZ" secondAttribute="bottom" id="Gfc-su-Xty"/>
+                            <constraint firstItem="g8e-gY-GWJ" firstAttribute="top" secondItem="bO1-Xm-XkZ" secondAttribute="bottom" id="Zsl-tH-f13"/>
+                            <constraint firstAttribute="trailing" secondItem="bO1-Xm-XkZ" secondAttribute="trailing" id="kQT-Mt-4YN"/>
+                            <constraint firstItem="bO1-Xm-XkZ" firstAttribute="leading" secondItem="kSS-sC-cit" secondAttribute="leading" id="uMw-pc-hxO"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Github JavaPop" id="OLG-U2-FOj">
                         <barButtonItem key="backBarButtonItem" title=" " id="HLp-dJ-30d">
@@ -45,7 +83,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="Uto-Re-pyr" kind="show" id="Urk-HK-fom"/>
+                        <outlet property="tableView" destination="bO1-Xm-XkZ" id="rh8-Yu-guD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Sx-Op-fxM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -55,7 +93,7 @@
         <!--Nome Repositório-->
         <scene sceneID="aKs-tc-LOs">
             <objects>
-                <viewController title="Nome Repositório" id="Uto-Re-pyr" sceneMemberID="viewController">
+                <viewController title="Nome Repositório" id="Uto-Re-pyr" customClass="PullRequestsViewController" customModule="Concrete" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="s0t-ed-lse"/>
                         <viewControllerLayoutGuide type="bottom" id="3LZ-En-GIy"/>
@@ -63,9 +101,47 @@
                     <view key="view" contentMode="scaleToFill" id="yeY-Mr-qJY">
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9n6-Po-MaG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" textLabel="2SG-YK-Cui" style="IBUITableViewCellStyleDefault" id="3Ms-A0-Tfa">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3Ms-A0-Tfa" id="CCW-To-ju8">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2SG-YK-Cui">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Uto-Re-pyr" id="euH-gB-pcj"/>
+                                    <outlet property="delegate" destination="Uto-Re-pyr" id="ry5-1p-bZz"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="9n6-Po-MaG" secondAttribute="trailing" id="9Fc-12-rTZ"/>
+                            <constraint firstItem="9n6-Po-MaG" firstAttribute="top" secondItem="s0t-ed-lse" secondAttribute="bottom" id="IUp-Lg-9sp"/>
+                            <constraint firstItem="3LZ-En-GIy" firstAttribute="top" secondItem="9n6-Po-MaG" secondAttribute="bottom" id="Skq-mK-Rdz"/>
+                            <constraint firstItem="9n6-Po-MaG" firstAttribute="leading" secondItem="yeY-Mr-qJY" secondAttribute="leading" id="wOr-Bn-S6f"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Nome Repositório" id="mAK-Tz-uBV"/>
+                    <connections>
+                        <outlet property="tableView" destination="9n6-Po-MaG" id="kcY-cN-mM8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="coR-pY-I5K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
