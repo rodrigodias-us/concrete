@@ -19,6 +19,10 @@ class HomeViewController: UIViewController {
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 105
         
+        loadRepositories()
+    }
+    
+    func loadRepositories() {
         SearchAPI.searchRepositoriesGet(q: "language:Java", sort: "stars", page: 1) { (response, error) in
             if let items = response?.items {
                 self.repositories = items

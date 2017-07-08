@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--Navigation View Controller-->
         <scene sceneID="HnQ-P1-Ayl">
             <objects>
-                <navigationController id="yfD-RB-k7O" sceneMemberID="viewController">
+                <navigationController id="yfD-RB-k7O" customClass="NavigationViewController" customModule="Concrete" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="GSD-0j-d0H">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -293,6 +293,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Nome Repositório" id="mAK-Tz-uBV"/>
                     <connections>
+                        <outlet property="countsLabel" destination="pcg-z2-q5S" id="4Ql-l0-NCc"/>
                         <outlet property="tableView" destination="9n6-Po-MaG" id="kcY-cN-mM8"/>
                     </connections>
                 </viewController>

@@ -28,6 +28,7 @@
 		03909D461F10229900F8082C /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03909D451F10229900F8082C /* RepositoryTableViewCell.swift */; };
 		03ADC70E1F10923500867EC7 /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ADC70D1F10923500867EC7 /* CircleImageView.swift */; };
 		03ADC7101F1187A100867EC7 /* PullRequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ADC70F1F1187A100867EC7 /* PullRequestTableViewCell.swift */; };
+		03ADC7121F118A3500867EC7 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ADC7111F118A3500867EC7 /* NavigationViewController.swift */; };
 		841883BDA514C49A4C8FFAF3 /* Pods_ConcreteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 196D9EF2DF632CB204831F18 /* Pods_ConcreteTests.framework */; };
 		90736A493D4E941480B6A8F4 /* Pods_Concrete.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B529EA1296495723A62B917F /* Pods_Concrete.framework */; };
 /* End PBXBuildFile section */
@@ -68,6 +69,7 @@
 		03909D451F10229900F8082C /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RepositoryTableViewCell.swift; path = Cells/RepositoryTableViewCell.swift; sourceTree = "<group>"; };
 		03ADC70D1F10923500867EC7 /* CircleImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CircleImageView.swift; path = Elements/CircleImageView.swift; sourceTree = "<group>"; };
 		03ADC70F1F1187A100867EC7 /* PullRequestTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PullRequestTableViewCell.swift; path = Cells/PullRequestTableViewCell.swift; sourceTree = "<group>"; };
+		03ADC7111F118A3500867EC7 /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationViewController.swift; path = Controllers/NavigationViewController.swift; sourceTree = "<group>"; };
 		196D9EF2DF632CB204831F18 /* Pods_ConcreteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConcreteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76A8406A45A1E364D4F581F2 /* Pods-Concrete.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Concrete.release.xcconfig"; path = "Pods/Target Support Files/Pods-Concrete/Pods-Concrete.release.xcconfig"; sourceTree = "<group>"; };
 		B529EA1296495723A62B917F /* Pods_Concrete.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Concrete.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +148,7 @@
 			children = (
 				034F7F2B1F0FE95B00AC7F08 /* HomeViewController.swift */,
 				034F7F2D1F0FE97400AC7F08 /* PullRequestsViewController.swift */,
+				03ADC7111F118A3500867EC7 /* NavigationViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -439,6 +442,7 @@
 				034F7F5C1F0FEEEF00AC7F08 /* ResultResponse.swift in Sources */,
 				034F7F531F0FEEEF00AC7F08 /* AlamofireImplementations.swift in Sources */,
 				034F7F551F0FEEEF00AC7F08 /* PullRequestsAPI.swift in Sources */,
+				03ADC7121F118A3500867EC7 /* NavigationViewController.swift in Sources */,
 				034F7F541F0FEEEF00AC7F08 /* APIHelper.swift in Sources */,
 				034F7F2C1F0FE95B00AC7F08 /* HomeViewController.swift in Sources */,
 				03ADC7101F1187A100867EC7 /* PullRequestTableViewCell.swift in Sources */,

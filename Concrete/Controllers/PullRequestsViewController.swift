@@ -13,6 +13,7 @@ class PullRequestsViewController: UIViewController {
     var pullRequests:[PullRequest] = []
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var countsLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,10 @@ class PullRequestsViewController: UIViewController {
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 125
         
+        loadPullRequests()
+    }
+    
+    func loadPullRequests() {
         if  let currentRepository = currentRepository,
             let creator = currentRepository.owner?.login,
             let repository = currentRepository.name {
@@ -31,7 +36,6 @@ class PullRequestsViewController: UIViewController {
                 }
             })
         }
-        
     }
 }
 
