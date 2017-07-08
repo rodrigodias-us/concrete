@@ -23,7 +23,7 @@ class HomeViewController: UIViewController {
     }
     
     func loadRepositories() {
-        SearchAPI.searchRepositoriesGet(q: "language:Java", sort: "stars", page: 1) { (response, error) in
+        RepositoriesBO.search(q: "language:Java", sort: "stars", page: 1) { (response, error) in
             if let items = response?.items {
                 self.repositories = items
                 self.tableView.reloadData()

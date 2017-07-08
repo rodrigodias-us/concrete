@@ -29,6 +29,8 @@
 		03ADC70E1F10923500867EC7 /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ADC70D1F10923500867EC7 /* CircleImageView.swift */; };
 		03ADC7101F1187A100867EC7 /* PullRequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ADC70F1F1187A100867EC7 /* PullRequestTableViewCell.swift */; };
 		03ADC7121F118A3500867EC7 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ADC7111F118A3500867EC7 /* NavigationViewController.swift */; };
+		03ADC7151F118C7100867EC7 /* RepositoriesBO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ADC7141F118C7100867EC7 /* RepositoriesBO.swift */; };
+		03ADC7171F118CE300867EC7 /* PullRequestsBO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ADC7161F118CE300867EC7 /* PullRequestsBO.swift */; };
 		841883BDA514C49A4C8FFAF3 /* Pods_ConcreteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 196D9EF2DF632CB204831F18 /* Pods_ConcreteTests.framework */; };
 		90736A493D4E941480B6A8F4 /* Pods_Concrete.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B529EA1296495723A62B917F /* Pods_Concrete.framework */; };
 /* End PBXBuildFile section */
@@ -70,6 +72,8 @@
 		03ADC70D1F10923500867EC7 /* CircleImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CircleImageView.swift; path = Elements/CircleImageView.swift; sourceTree = "<group>"; };
 		03ADC70F1F1187A100867EC7 /* PullRequestTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PullRequestTableViewCell.swift; path = Cells/PullRequestTableViewCell.swift; sourceTree = "<group>"; };
 		03ADC7111F118A3500867EC7 /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationViewController.swift; path = Controllers/NavigationViewController.swift; sourceTree = "<group>"; };
+		03ADC7141F118C7100867EC7 /* RepositoriesBO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RepositoriesBO.swift; path = Bussines/RepositoriesBO.swift; sourceTree = "<group>"; };
+		03ADC7161F118CE300867EC7 /* PullRequestsBO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PullRequestsBO.swift; path = Bussines/PullRequestsBO.swift; sourceTree = "<group>"; };
 		196D9EF2DF632CB204831F18 /* Pods_ConcreteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConcreteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76A8406A45A1E364D4F581F2 /* Pods-Concrete.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Concrete.release.xcconfig"; path = "Pods/Target Support Files/Pods-Concrete/Pods-Concrete.release.xcconfig"; sourceTree = "<group>"; };
 		B529EA1296495723A62B917F /* Pods_Concrete.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Concrete.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +125,7 @@
 		0332E9E91F0ED8D300DFCB6C /* Concrete */ = {
 			isa = PBXGroup;
 			children = (
+				03ADC7131F118C3200867EC7 /* Bussines */,
 				03ADC70C1F1091EB00867EC7 /* Elements */,
 				03909D421F10224C00F8082C /* Cells */,
 				034F7F2F1F0FE9DC00AC7F08 /* Providers */,
@@ -204,6 +209,15 @@
 				03ADC70D1F10923500867EC7 /* CircleImageView.swift */,
 			);
 			name = Elements;
+			sourceTree = "<group>";
+		};
+		03ADC7131F118C3200867EC7 /* Bussines */ = {
+			isa = PBXGroup;
+			children = (
+				03ADC7141F118C7100867EC7 /* RepositoriesBO.swift */,
+				03ADC7161F118CE300867EC7 /* PullRequestsBO.swift */,
+			);
+			name = Bussines;
 			sourceTree = "<group>";
 		};
 		676AF0013D4AC9DA0FF64EBC /* Frameworks */ = {
@@ -447,7 +461,9 @@
 				034F7F2C1F0FE95B00AC7F08 /* HomeViewController.swift in Sources */,
 				03ADC7101F1187A100867EC7 /* PullRequestTableViewCell.swift in Sources */,
 				034F7F5B1F0FEEEF00AC7F08 /* Repository.swift in Sources */,
+				03ADC7171F118CE300867EC7 /* PullRequestsBO.swift in Sources */,
 				034F7F5D1F0FEEEF00AC7F08 /* Models.swift in Sources */,
+				03ADC7151F118C7100867EC7 /* RepositoriesBO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -29,7 +29,7 @@ class PullRequestsViewController: UIViewController {
             let creator = currentRepository.owner?.login,
             let repository = currentRepository.name {
             
-            PullRequestsAPI.reposCriadorRepositorioPullsGet(criador: creator, repositorio: repository, completion: { (pullRequests, error) in
+            PullRequestsBO.query(criador: creator, repositorio: repository, completion: { (pullRequests, error) in
                 if let pullRequests = pullRequests {
                     self.pullRequests = pullRequests
                     self.tableView.reloadData()
