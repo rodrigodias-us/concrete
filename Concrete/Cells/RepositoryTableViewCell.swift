@@ -27,7 +27,7 @@ class RepositoryTableViewCell: UITableViewCell {
         profileUsernameLabel.text = repository.owner?.login
         
         if let imageUrl = repository.owner?.avatarUrl {
-            profileImageView.sd_setImage(with: URL(string: (imageUrl)))
+            profileImageView.sd_setImage(with: URL(string: imageUrl), placeholderImage: #imageLiteral(resourceName: "ProfileBig"))
         } else {
             profileImageView.image = #imageLiteral(resourceName: "ProfileBig")
         }

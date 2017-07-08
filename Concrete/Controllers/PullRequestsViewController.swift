@@ -17,6 +17,9 @@ class PullRequestsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 125
+        
         if  let currentRepository = currentRepository,
             let creator = currentRepository.owner?.login,
             let repository = currentRepository.name {
@@ -38,9 +41,9 @@ extension PullRequestsViewController: UITableViewDataSource, UITableViewDelegate
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! PullRequestTableViewCell
         
-        cell.textLabel?.text = pullRequests[indexPath.row].user?.login
+        cell.setup(pullRequest: pullRequests[indexPath.row])
         
         return cell
     }
