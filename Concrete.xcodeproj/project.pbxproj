@@ -25,6 +25,8 @@
 		034F7F5B1F0FEEEF00AC7F08 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034F7F501F0FEEEF00AC7F08 /* Repository.swift */; };
 		034F7F5C1F0FEEEF00AC7F08 /* ResultResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034F7F511F0FEEEF00AC7F08 /* ResultResponse.swift */; };
 		034F7F5D1F0FEEEF00AC7F08 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034F7F521F0FEEEF00AC7F08 /* Models.swift */; };
+		03909D461F10229900F8082C /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03909D451F10229900F8082C /* RepositoryTableViewCell.swift */; };
+		03ADC70E1F10923500867EC7 /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ADC70D1F10923500867EC7 /* CircleImageView.swift */; };
 		841883BDA514C49A4C8FFAF3 /* Pods_ConcreteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 196D9EF2DF632CB204831F18 /* Pods_ConcreteTests.framework */; };
 		90736A493D4E941480B6A8F4 /* Pods_Concrete.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B529EA1296495723A62B917F /* Pods_Concrete.framework */; };
 /* End PBXBuildFile section */
@@ -62,6 +64,8 @@
 		034F7F501F0FEEEF00AC7F08 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		034F7F511F0FEEEF00AC7F08 /* ResultResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultResponse.swift; sourceTree = "<group>"; };
 		034F7F521F0FEEEF00AC7F08 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Models.swift; path = Providers/Models.swift; sourceTree = "<group>"; };
+		03909D451F10229900F8082C /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RepositoryTableViewCell.swift; path = Cells/RepositoryTableViewCell.swift; sourceTree = "<group>"; };
+		03ADC70D1F10923500867EC7 /* CircleImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CircleImageView.swift; path = Elements/CircleImageView.swift; sourceTree = "<group>"; };
 		196D9EF2DF632CB204831F18 /* Pods_ConcreteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConcreteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76A8406A45A1E364D4F581F2 /* Pods-Concrete.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Concrete.release.xcconfig"; path = "Pods/Target Support Files/Pods-Concrete/Pods-Concrete.release.xcconfig"; sourceTree = "<group>"; };
 		B529EA1296495723A62B917F /* Pods_Concrete.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Concrete.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +117,8 @@
 		0332E9E91F0ED8D300DFCB6C /* Concrete */ = {
 			isa = PBXGroup;
 			children = (
+				03ADC70C1F1091EB00867EC7 /* Elements */,
+				03909D421F10224C00F8082C /* Cells */,
 				034F7F2F1F0FE9DC00AC7F08 /* Providers */,
 				034F7F2A1F0FE93E00AC7F08 /* Controllers */,
 				0332E9EA1F0ED8D300DFCB6C /* AppDelegate.swift */,
@@ -176,6 +182,22 @@
 			);
 			name = Models;
 			path = Providers/Models;
+			sourceTree = "<group>";
+		};
+		03909D421F10224C00F8082C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				03909D451F10229900F8082C /* RepositoryTableViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		03ADC70C1F1091EB00867EC7 /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				03ADC70D1F10923500867EC7 /* CircleImageView.swift */,
+			);
+			name = Elements;
 			sourceTree = "<group>";
 		};
 		676AF0013D4AC9DA0FF64EBC /* Frameworks */ = {
@@ -402,9 +424,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03ADC70E1F10923500867EC7 /* CircleImageView.swift in Sources */,
 				034F7F2E1F0FE97400AC7F08 /* PullRequestsViewController.swift in Sources */,
 				034F7F591F0FEEEF00AC7F08 /* Profile.swift in Sources */,
 				034F7F581F0FEEEF00AC7F08 /* Extensions.swift in Sources */,
+				03909D461F10229900F8082C /* RepositoryTableViewCell.swift in Sources */,
 				034F7F561F0FEEEF00AC7F08 /* SearchAPI.swift in Sources */,
 				034F7F571F0FEEEF00AC7F08 /* APIs.swift in Sources */,
 				0332E9EB1F0ED8D300DFCB6C /* AppDelegate.swift in Sources */,

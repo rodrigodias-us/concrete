@@ -15,6 +15,10 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 105
+        
         SearchAPI.searchRepositoriesGet(q: "language:Java", sort: "stars", page: 1) { (response, error) in
             if let items = response?.items {
                 self.repositories = items
@@ -32,14 +36,16 @@ class HomeViewController: UIViewController {
 }
 
 extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return repositories.count
     }
     
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
+        let cell = tableView.dequeueReusableCell(withIdentifier: RepositoryTableViewCell.identifier) as! RepositoryTableViewCell
         
-        cell.textLabel?.text = repositories[indexPath.row].name
+        cell.setup(repository: repositories[indexPath.row])
         
         return cell
     }
