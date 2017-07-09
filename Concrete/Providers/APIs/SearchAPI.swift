@@ -18,7 +18,7 @@ open class SearchAPI: APIBase {
      - parameter page: (query) page (optional)
      - parameter completion: completion handler to receive the data and the error objects
      */
-    open class func searchRepositoriesGet(q: String, sort: String? = nil, page: Int32? = nil, completion: @escaping ((_ data: ResultResponse?,_ error: Error?) -> Void)) {
+    open func searchRepositoriesGet(q: String, sort: String? = nil, page: Int32? = nil, completion: @escaping ((_ data: ResultResponse?,_ error: Error?) -> Void)) {
         searchRepositoriesGetWithRequestBuilder(q: q, sort: sort, page: page).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
@@ -52,7 +52,7 @@ open class SearchAPI: APIBase {
 
      - returns: RequestBuilder<ResultResponse> 
      */
-    open class func searchRepositoriesGetWithRequestBuilder(q: String, sort: String? = nil, page: Int32? = nil) -> RequestBuilder<ResultResponse> {
+    open func searchRepositoriesGetWithRequestBuilder(q: String, sort: String? = nil, page: Int32? = nil) -> RequestBuilder<ResultResponse> {
         let path = "/search/repositories"
         let URLString = SwaggerClientAPI.basePath + path
         let parameters: [String:Any]? = nil

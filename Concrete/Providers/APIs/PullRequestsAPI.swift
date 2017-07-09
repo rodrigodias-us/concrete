@@ -17,7 +17,7 @@ open class PullRequestsAPI: APIBase {
      - parameter repositorio: (path) Repositorio 
      - parameter completion: completion handler to receive the data and the error objects
      */
-    open class func reposCriadorRepositorioPullsGet(criador: String, repositorio: String, completion: @escaping ((_ data: [PullRequest]?,_ error: Error?) -> Void)) {
+    open func reposCriadorRepositorioPullsGet(criador: String, repositorio: String, completion: @escaping ((_ data: [PullRequest]?,_ error: Error?) -> Void)) {
         reposCriadorRepositorioPullsGetWithRequestBuilder(criador: criador, repositorio: repositorio).execute { (response, error) -> Void in
             completion(response?.body, error);
         }
@@ -46,7 +46,7 @@ open class PullRequestsAPI: APIBase {
 
      - returns: RequestBuilder<[PullRequest]> 
      */
-    open class func reposCriadorRepositorioPullsGetWithRequestBuilder(criador: String, repositorio: String) -> RequestBuilder<[PullRequest]> {
+    open func reposCriadorRepositorioPullsGetWithRequestBuilder(criador: String, repositorio: String) -> RequestBuilder<[PullRequest]> {
         var path = "/repos/{criador}/{repositorio}/pulls"
         path = path.replacingOccurrences(of: "{criador}", with: "\(criador)", options: .literal, range: nil)
         path = path.replacingOccurrences(of: "{repositorio}", with: "\(repositorio)", options: .literal, range: nil)

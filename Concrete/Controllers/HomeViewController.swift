@@ -9,8 +9,11 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    // MARK: - Proprieties
+    private let repositoriesBO = RepositoriesBO()
     var repositories:[Repository] = []
     
+    // MARK: - IBOutlets
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -23,7 +26,7 @@ class HomeViewController: UIViewController {
     }
     
     func loadRepositories() {
-        RepositoriesBO.search(q: "language:Java", sort: "stars", page: 1) { (response, error) in
+        repositoriesBO.search(q: "language:Java", sort: "stars", page: 1) { (response, error) in
             if let items = response?.items {
                 self.repositories = items
                 self.tableView.reloadData()

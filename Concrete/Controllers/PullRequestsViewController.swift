@@ -8,9 +8,13 @@
 
 import UIKit
 
-class PullRequestsViewController: UIViewController {    
+class PullRequestsViewController: UIViewController {
+    // MARK: - Proprieties
+    private let pullRequestsBO = PullRequestsBO()
     var currentRepository:Repository? = nil
     var pullRequests:[PullRequest] = []
+    
+    // MARK: - IBOutlets
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var countsLabel: UILabel!
@@ -29,7 +33,7 @@ class PullRequestsViewController: UIViewController {
             let creator = currentRepository.owner?.login,
             let repository = currentRepository.name {
             
-            PullRequestsBO.query(criador: creator, repositorio: repository, completion: { (pullRequests, error) in
+            pullRequestsBO.query(criador: creator, repositorio: repository, completion: { (pullRequests, error) in
                 if let pullRequests = pullRequests {
                     self.pullRequests = pullRequests
                     self.tableView.reloadData()
