@@ -175,11 +175,13 @@ class Decoders {
 
             let instance = PullRequest()
             instance.id = Decoders.decodeOptional(clazz: Int32.self, source: sourceDictionary["id"] as AnyObject?)
+            instance.htmlUrl = Decoders.decodeOptional(clazz: String.self, source: sourceDictionary["html_url"] as AnyObject?)
             instance.title = Decoders.decodeOptional(clazz: String.self, source: sourceDictionary["title"] as AnyObject?)
+            instance.state = Decoders.decodeOptional(clazz: String.self, source: sourceDictionary["state"] as AnyObject?)
             instance.user = Decoders.decodeOptional(clazz: Profile.self, source: sourceDictionary["user"] as AnyObject?)
             instance.body = Decoders.decodeOptional(clazz: String.self, source: sourceDictionary["body"] as AnyObject?)
-            instance.createdAt = Decoders.decodeOptional(clazz: String.self, source: sourceDictionary["created_at"] as AnyObject?)
-            instance.updatedAt = Decoders.decodeOptional(clazz: String.self, source: sourceDictionary["updated_at"] as AnyObject?)
+            instance.createdAt = Decoders.decodeOptional(clazz: Date.self, source: sourceDictionary["created_at"] as AnyObject?)
+            instance.updatedAt = Decoders.decodeOptional(clazz: Date.self, source: sourceDictionary["updated_at"] as AnyObject?)
             return instance
         }
 

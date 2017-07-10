@@ -30,8 +30,10 @@ open class PullRequestsAPI: APIBase {
      - Get Pull Requests
      - examples: [{contentType=application/json, example=[ {
   "updated_at" : "2017-06-30T16:55:43Z",
+  "html_url" : "https://github.com/ReactiveX/RxJava/pull/5453",
   "created_at" : "2017-06-30T16:55:43Z",
   "id" : 100,
+  "state" : "open",
   "title" : "2.x: See if sudo required results in consistent & faster build times",
   "body" : "I asked the Travis support about the slow build times of lately and they suggested I try `sudo:required` to have an isolated build VM instead of the shared container-based one. I'll rerun this PR a couple of times to see the effects.",
   "user" : {

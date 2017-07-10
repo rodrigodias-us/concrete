@@ -12,12 +12,12 @@ import SDWebImage
 class RepositoryTableViewCell: UITableViewCell {
     static let identifier = "RepositoryCell"
     
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
-    @IBOutlet weak var forksLabel: UILabel!
-    @IBOutlet weak var starsLabel: UILabel!
-    @IBOutlet weak var profileImageView: CircleImageView!
-    @IBOutlet weak var profileUsernameLabel: UILabel!
+    @IBOutlet private weak var nameLabel: UILabel!
+    @IBOutlet private weak var descriptionLabel: UILabel!
+    @IBOutlet private weak var forksLabel: UILabel!
+    @IBOutlet private weak var starsLabel: UILabel!
+    @IBOutlet private weak var profileImageView: CircleImageView!
+    @IBOutlet private weak var profileUsernameLabel: UILabel!
     
     func setup(repository:Repository) {
         nameLabel.text = repository.name

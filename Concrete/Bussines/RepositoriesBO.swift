@@ -12,7 +12,7 @@ class RepositoriesBO {
     var dataProvider = SearchAPI()
     
     func search(q: String, sort: String? = nil, page: Int32? = nil, completion: @escaping ((_ data: ResultResponse?,_ error: Error?) -> Void)) {
-        dataProvider.searchRepositoriesGet(q: "language:Java", sort: "stars", page: 1) { (response, error) in
+        dataProvider.searchRepositoriesGet(q: q, sort: sort, page: page) { (response, error) in
             completion(response, error)
         }
     }

@@ -8,6 +8,7 @@ target 'Concrete' do
   # Pods for Concrete
   pod 'Alamofire', '~> 4.0'
   pod 'SDWebImage', '~>3.8'
+  pod 'NVActivityIndicatorView'
 
   target 'ConcreteTests' do
     inherit! :search_paths

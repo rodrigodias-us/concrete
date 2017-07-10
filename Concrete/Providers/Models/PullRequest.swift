@@ -10,11 +10,13 @@ import Foundation
 
 open class PullRequest: JSONEncodable {
     public var id: Int32?
+    public var htmlUrl: String?
     public var title: String?
+    public var state: String?
     public var user: Profile?
     public var body: String?
-    public var createdAt: String?
-    public var updatedAt: String?
+    public var createdAt: Date?
+    public var updatedAt: Date?
 
     public init() {}
 
@@ -22,11 +24,13 @@ open class PullRequest: JSONEncodable {
     open func encodeToJSON() -> Any {
         var nillableDictionary = [String:Any?]()
         nillableDictionary["id"] = self.id?.encodeToJSON()
+        nillableDictionary["html_url"] = self.htmlUrl
         nillableDictionary["title"] = self.title
+        nillableDictionary["state"] = self.state
         nillableDictionary["user"] = self.user?.encodeToJSON()
         nillableDictionary["body"] = self.body
-        nillableDictionary["created_at"] = self.createdAt
-        nillableDictionary["updated_at"] = self.updatedAt
+        nillableDictionary["created_at"] = self.createdAt?.encodeToJSON()
+        nillableDictionary["updated_at"] = self.updatedAt?.encodeToJSON()
         let dictionary: [String:Any] = APIHelper.rejectNil(nillableDictionary) ?? [:]
         return dictionary
     }

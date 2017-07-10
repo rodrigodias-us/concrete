@@ -1,17 +1,20 @@
 PODS:
   - Alamofire (4.4.0)
+  - NVActivityIndicatorView (3.6.1)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
 
 DEPENDENCIES:
   - Alamofire (~> 4.0)
+  - NVActivityIndicatorView
   - SDWebImage (~> 3.8)
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  NVActivityIndicatorView: 9f52a7f84bf5c6a798722c450fe3c198e01c56ed
   SDWebImage: '098e97e6176540799c27e804c96653ee0833d13c'
 
-PODFILE CHECKSUM: 46db4111db60ad249504c6d70e7cececf2af8b92
+PODFILE CHECKSUM: afca9a7040c1dc3e1316652472351b24fdcd96a9
 
 COCOAPODS: 1.2.1

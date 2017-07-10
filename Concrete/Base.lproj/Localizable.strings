@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  Concrete
+
+  Created by Rodrigo Dias on 09/07/17.
+  Copyright © 2017 Rodrigo Dias. All rights reserved.
+*/
+
+"errorWebTitle" = "Error";
+"errorWebMessage" = "here was a problem please check your connection and try again.";
+"errorWebButton" = "Try Again";

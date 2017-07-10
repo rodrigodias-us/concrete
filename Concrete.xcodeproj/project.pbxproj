@@ -49,6 +49,8 @@
 		03ADC7371F11AB8600867EC7 /* MockSearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ADC7361F11AB8600867EC7 /* MockSearchAPI.swift */; };
 		03ADC73A1F11AD9400867EC7 /* MockPullRequestsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ADC7391F11AD9400867EC7 /* MockPullRequestsAPI.swift */; };
 		03ADC73C1F11ADF900867EC7 /* pullrxjava.json in Resources */ = {isa = PBXBuildFile; fileRef = 03ADC73B1F11ADF900867EC7 /* pullrxjava.json */; };
+		03ADC73E1F12F7D800867EC7 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ADC73D1F12F7D800867EC7 /* BaseViewController.swift */; };
+		03ADC7431F12FD4C00867EC7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03ADC7451F12FD4C00867EC7 /* Localizable.strings */; };
 		841883BDA514C49A4C8FFAF3 /* Pods_ConcreteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 196D9EF2DF632CB204831F18 /* Pods_ConcreteTests.framework */; };
 		90736A493D4E941480B6A8F4 /* Pods_Concrete.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B529EA1296495723A62B917F /* Pods_Concrete.framework */; };
 /* End PBXBuildFile section */
@@ -97,6 +99,9 @@
 		03ADC7361F11AB8600867EC7 /* MockSearchAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MockSearchAPI.swift; path = Mocks/MockSearchAPI.swift; sourceTree = "<group>"; };
 		03ADC7391F11AD9400867EC7 /* MockPullRequestsAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MockPullRequestsAPI.swift; path = Mocks/MockPullRequestsAPI.swift; sourceTree = "<group>"; };
 		03ADC73B1F11ADF900867EC7 /* pullrxjava.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = pullrxjava.json; path = Mocks/Json/pullrxjava.json; sourceTree = "<group>"; };
+		03ADC73D1F12F7D800867EC7 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = Controllers/BaseViewController.swift; sourceTree = "<group>"; };
+		03ADC7441F12FD4C00867EC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		03ADC7461F12FD5D00867EC7 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		196D9EF2DF632CB204831F18 /* Pods_ConcreteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConcreteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76A8406A45A1E364D4F581F2 /* Pods-Concrete.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Concrete.release.xcconfig"; path = "Pods/Target Support Files/Pods-Concrete/Pods-Concrete.release.xcconfig"; sourceTree = "<group>"; };
 		B529EA1296495723A62B917F /* Pods_Concrete.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Concrete.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,6 +163,7 @@
 				0332E9F11F0ED8D300DFCB6C /* Assets.xcassets */,
 				0332E9F31F0ED8D300DFCB6C /* LaunchScreen.storyboard */,
 				0332E9F61F0ED8D300DFCB6C /* Info.plist */,
+				03ADC7451F12FD4C00867EC7 /* Localizable.strings */,
 			);
 			path = Concrete;
 			sourceTree = "<group>";
@@ -175,6 +181,7 @@
 		034F7F2A1F0FE93E00AC7F08 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				03ADC73D1F12F7D800867EC7 /* BaseViewController.swift */,
 				034F7F2B1F0FE95B00AC7F08 /* HomeViewController.swift */,
 				034F7F2D1F0FE97400AC7F08 /* PullRequestsViewController.swift */,
 				03ADC7111F118A3500867EC7 /* NavigationViewController.swift */,
@@ -366,6 +373,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = 0332E9DE1F0ED8D300DFCB6C;
 			productRefGroup = 0332E9E81F0ED8D300DFCB6C /* Products */;
@@ -384,6 +392,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0332E9F51F0ED8D300DFCB6C /* LaunchScreen.storyboard in Resources */,
+				03ADC7431F12FD4C00867EC7 /* Localizable.strings in Resources */,
 				0332E9F21F0ED8D300DFCB6C /* Assets.xcassets in Resources */,
 				0332E9F01F0ED8D300DFCB6C /* Main.storyboard in Resources */,
 			);
@@ -503,6 +512,7 @@
 				034F7F591F0FEEEF00AC7F08 /* Profile.swift in Sources */,
 				034F7F581F0FEEEF00AC7F08 /* Extensions.swift in Sources */,
 				03909D461F10229900F8082C /* RepositoryTableViewCell.swift in Sources */,
+				03ADC73E1F12F7D800867EC7 /* BaseViewController.swift in Sources */,
 				034F7F561F0FEEEF00AC7F08 /* SearchAPI.swift in Sources */,
 				034F7F571F0FEEEF00AC7F08 /* APIs.swift in Sources */,
 				0332E9EB1F0ED8D300DFCB6C /* AppDelegate.swift in Sources */,
@@ -572,6 +582,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		03ADC7451F12FD4C00867EC7 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03ADC7441F12FD4C00867EC7 /* Base */,
+				03ADC7461F12FD5D00867EC7 /* pt-BR */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -579,6 +598,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -630,6 +650,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
